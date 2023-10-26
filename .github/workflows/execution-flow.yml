@@ -89,4 +89,5 @@ jobs:
       - name: Output information on failure
         run: |
           echo Something went wrong
-          echo ${{ toJson(github) }}
+          echo "${{ toJSON(github) }}"
+          pwd
